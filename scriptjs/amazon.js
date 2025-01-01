@@ -92,4 +92,9 @@ product.forEach((product) => {
 
 console.log(productsHtml);
 
-document.querySelector(".js-product-grid").innerHTML = productsHtml;
+document.querySelector('.js-product-grid').innerHTML = productsHtml;
+document.querySelectorAll(".js-add-to-cart").forEach((button) => {
+  button.addEventListener("click", () => {
+    console.log("Added product");
+  });
+});
